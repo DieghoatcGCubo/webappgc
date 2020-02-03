@@ -23,13 +23,15 @@ import { ApiViewComponent } from './components/api/api-view/api-view.component';
 import { ApiListComponent } from './components/api/api-list/api-list.component';
 import { ApiFormComponent } from './components/api/api-form/api-form.component';
 import { ChatboxComponent } from './chatbox/chatbox.component';
+import { MessengerComponent } from './messenger/messenger.component';
 
 const routes: Route[] = [
   { path: ' ', component: AppComponent},
   { path: 'localstorage', component: LocalstorageComponent},
   { path: 'apirest', component: ApirestComponent},
   { path: 'login', component: LoginComponent},
-  { path: 'chatbot', component: ChatboxComponent}
+  { path: 'chatbot', component: ChatboxComponent},
+  { path: 'messenger', component: MessengerComponent}
 ];
 
 @NgModule({
@@ -48,7 +50,8 @@ const routes: Route[] = [
     ApiViewComponent,
     ApiListComponent,
     ApiFormComponent,
-    ChatboxComponent
+    ChatboxComponent,
+    MessengerComponent
   ],
   imports: [
     BrowserModule,
