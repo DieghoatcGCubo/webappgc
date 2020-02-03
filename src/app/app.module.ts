@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Route } from '@angular/router';
+import { FacebookModule } from 'ngx-facebook';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -57,7 +58,8 @@ const routes: Route[] = [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    FacebookModule.forRoot()
   ],
   providers: [DataService, TaskService],
   bootstrap: [AppComponent]
